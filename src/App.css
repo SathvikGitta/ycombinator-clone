@@ -1,23 +1,31 @@
-:root{
-    --color : #222;
+:root {
+    --color: #222;
+    --color-blue: #268BD2;
     --background-color: #F5F5EE;
 }
 
-a{
-    text-decoration: none;
-  }
-  
-li{
-    list-style-type: none;
-  }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--color);
+}
 
-.navbar-container{
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navbar-container {
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--background-color);
+
+    border-bottom: 1px solid #d5d5d1;
 }
 
 .navbar-container ul {
@@ -26,50 +34,221 @@ li{
     align-items: center;
 }
 
-.navlinks{
+.navlinks {
     color: var(--color);
 }
 
 
-.title-link{
+.title-link {
     padding: 5px 15px;
     border-radius: 4px;
     background-color: darkorange;
-    color: #fff;  
+    color: #fff;
     font-size: 35px;
 }
 
-.button{
+.button {
     cursor: pointer;
     margin-right: 30px;
     padding: 15px 25px;
     border: none;
     outline: none;
     background-color: darkorange;
-    font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 4px;
     color: #fff;
 }
 
 
 /* NavContianer */
-.navcontainer-text{
+.navcontainer-text {
     width: 100%;
-    height: 250px;
-    background-color: var(--background-color);
+    height: 200px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #d5d5d1;
 }
 
-.navcontainer-text-container{
+.navcontainer-text-container {
     /* background: #000; */
     width: 100%;
     padding-left: 30px;
 }
-.navcontainer-text-container p{
-    width: 75%;
+
+.navcontainer-text-container p {
+    width: 85%;
 }
+
+
+/* Text Containe */
+
+.Text-Description>a {
+    color: var(--color);
+    font-weight: 400;
+    line-height: 145%;
+}
+
+.Text-Title>a {
+    color: var(--color-blue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 185%;
+}
+
+
+/* ContainerImage Styling */
+.contianerSection {
+    margin-top: 100px;
+}
+
+.containerSection--Container {
+    display: flex;
+    padding: 0px 20px;
+}
+
+.container-section--text-section {
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container-section-title-text {
+    width: 90%;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-blue);
+    margin-bottom: 20px;
+}
+
+.container-section-span-text {
+
+    line-height: 145%;
+    word-spacing: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: justify;
+}
+
+.container-section--image-section img {
+    width: 500px;
+    object-fit: cover;
+    height: 500px;
+    border-radius: 4px;
+}
+
+.button-option {
+    margin-top: 30px;
+}
+
+.button-option>a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
+.btn-learn_more {
+    padding-right: 30px;
+}
+
+/* End of ContainerImage Styling  */
+
+
+
+/* Startup Container Styling */
+.startup--container{
+    margin: 60px 20px;
+}
+
+.startup--container-flex{
+    padding: 0px 30px;
+    height: 175px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+.startup-container-values--flex{
+    display: flex;
+}
+
+.startup-title--span{
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(127, 126, 126);
+}
+
+
+.StartupTitle{
+    padding-left: 10px;
+    line-height: 165%;
+    font-weight: 500;
+    color: var(--color)
+
+}
+
+/* End of Startup Container Styling */
+
+.companies-title-txt{
+    margin-left: 30px;
+    font-size: 14px;
+    color: rgb(127, 126, 126);
+
+}
+.startup-container-companyTies{
+    margin-left: 30px;
+    margin-top: 20px;   
+    display: grid;
+    height: 300px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px 20px;
+}
+
+.Company-Names-Title{
+    color: var(--color);
+    text-align: center;
+    padding: 25px 30px;
+    /* border: 1px solid var(--color); */
+}
+
+
+/* Job Opportunities Component Styling */
+
+.additonal--component-container{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.additional-component-grid-items{
+    border-top: 1px solid #a4a4a0;
+    margin:0px 20px 0px 30px;   
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.component-grid {  
+    margin-top: 20px;
+    padding-block: 20px;
+    text-align: center;
+    line-height: 165%;
+    background-color: #fff; 
+    border-radius: 4px;
+}
+
+.component-grid a{
+    color: #222;
+}
+
+.component-grid ,.additems-desc{
+    width: 100%;
+    color: var(--color);
+}
+
